@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Layout from './components/Layout/Layout';
+
 import Profile from './components/Profile/Profile';
 import user from './components/Profile/user.json';
 
@@ -14,7 +16,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 const App = () => {
   return (
-    <>
+    <Layout>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -28,7 +30,7 @@ const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </>
+    </Layout>
   );
 };
 
