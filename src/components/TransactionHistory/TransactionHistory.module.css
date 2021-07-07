@@ -1,5 +1,5 @@
 .transaction_history {
-  width: 100%;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
@@ -12,7 +12,7 @@
 
 .title {
   padding: 15px 5px;
-  width: calc((100%-20px) / 3);
+  width: calc(100% / 3);
   background-color: #8ad1f5;
   color: #ffffff;
   text-transform: uppercase;
@@ -22,6 +22,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #777b88;
+  text-transform: capitalize;
 }
 
 .row:nth-child(2n) {
